@@ -1,0 +1,121 @@
+:root {
+	--vt-green: hsl(142, 50%, 30%);
+	--link: hsl(30, 40%, 30%);
+	--link-hover: hsl(30, 40%, 45%);
+	--bg: hsl(210, 40%, 98%);
+	--text-primary: hsl(222, 47%, 11%);
+	--text-secondary: hsl(215, 20%, 40%);
+	--text-footer: hsl(215, 16%, 47%);
+	--text-heading: hsl(222, 47%, 5%);
+	--border-footer: hsl(215, 20%, 90%);
+	--surface: hsl(0, 0%, 100%);
+	--shadow: hsla(0, 0%, 0%, 0.08);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	font-family: 'Urbanist', sans-serif;
+	line-height: 1.6;
+	font-size: 1rem;
+	background-color: var(--bg);
+	color: var(--text-primary);
+	padding: 1.25rem;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 1rem;
+	font-weight: 700;
+	color: var(--text-heading);
+}
+
+h1 {
+	font-size: 2.25rem;
+	color: var(--vt-green);
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+p {
+	margin-bottom: 0.5rem;
+	font-weight: 400;
+	color: var(--text-secondary);
+}
+
+a {
+	color: var(--link);
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+a:hover {
+	color: var(--link-hover);
+	text-decoration: underline;
+}
+
+ul,
+ol {
+	margin-bottom: 1rem;
+	padding-left: 1.25rem;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 0.5rem;
+}
+
+footer {
+	margin-top: 2rem;
+	padding: 1rem;
+	text-align: center;
+	font-size: 1rem;
+	color: var(--text-footer);
+	border-top: 1px solid var(--border-footer);
+}
+
+.container {
+	max-width: 60rem;
+	margin: 0 auto;
+	background: var(--surface);
+	padding: 1.25rem;
+	border-radius: 0.2rem;
+	box-shadow: 0 0.125rem 0.25rem var(--shadow);
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.teaser {
+	font-size: 1.25rem;
+	font-weight: 500;
+	color: var(--vt-green);
+	margin-top: 2rem;
+	letter-spacing: 0.02em;
+	font-style: italic;
+}

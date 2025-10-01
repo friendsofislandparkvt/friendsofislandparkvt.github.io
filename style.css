@@ -119,3 +119,11 @@ footer {
 	letter-spacing: 0.02em;
 	font-style: italic;
 }
+
+.center-img-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem 1rem 1rem;
+}

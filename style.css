@@ -165,3 +165,7 @@ footer {
     hsla(210, 40%, 98%, 0.3) 100%
   );
 }
+
+footer div {
+    padding: .5rem;
+}

@@ -158,10 +158,10 @@ footer {
 	pointer-events: none;
 	background: linear-gradient(
 		to right,
-		hsla(210, 40%, 98%, 0.4) 0%,
+		hsla(210, 40%, 98%, 0.3) 0%,
 		transparent calc((100vw - 60rem) / 2),
 		transparent calc(100% - (100vw - 60rem) / 2),
-		hsla(210, 40%, 98%, 0.4) 100%
+		hsla(210, 40%, 98%, 0.3) 100%
 	);
 }
 

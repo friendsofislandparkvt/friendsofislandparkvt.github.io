@@ -53,7 +53,7 @@ h6 {
 
 h1 {
 	font-size: 3rem;
-	color: var(--vt-green);
+	color: white;
 }
 
 h2 {
@@ -135,6 +135,7 @@ footer {
 	margin-left: -50vw;
 	margin-bottom: 2rem;
 	overflow: visible;
+    top: -1.25rem
 }
 
 .hero img {
@@ -147,6 +148,31 @@ footer {
 	filter: brightness(0.95) contrast(1.05);
 }
 
+.hero > h1 {
+    position: absolute;
+    height: auto;
+    color: white;
+    top: 50%; 
+    z-index: 2;
+    font-size: clamp(2.5rem, 5vw + 1rem, 3.5rem);
+    background-color: hsl(142 50%  30% / 0.8);
+    padding-left: clamp(1rem, 2vw, 2rem);
+    line-height: 1;
+    font-weight: 500;
+}
+
+@media (max-width: 400px) {
+    .hero > h1 {
+        top: 35%;
+        background-color: hsl(142 50%  30% / 0.5);
+    }
+}
+
+.hero > h1 > span {
+    position: relative;
+    top: clamp(10px, 2vw, 16px);
+}
+
 /* Symmetrical side fade overlay */
 .hero::after {
 	content: '';
@@ -156,7 +182,9 @@ footer {
 	left: 0;
 	right: 0;
 	pointer-events: none;
-	background: linear-gradient(
+	background-image: 
+    linear-gradient(hsl(0 0% 0% / .2) 0 0),
+    linear-gradient(
 		to right,
 		hsla(210, 40%, 98%, 0.3) 0%,
 		transparent calc((100vw - 60rem) / 2),

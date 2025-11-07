@@ -128,18 +128,6 @@ footer {
 	padding: 2rem 1rem 1rem 1rem;
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.2; /* adjust opacity as needed */
-    z-index: 0; /* behind text and image */
-}
-
 .hero {
 	position: relative;
 	width: 100vw;

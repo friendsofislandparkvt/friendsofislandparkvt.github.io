@@ -227,8 +227,11 @@ footer {
         }
 	}
 
-	@media (min-width: 631px) {
+	@media (min-width: 601px) {
 		grid-template-columns: repeat(3, 1fr);
+	}
+	@media (min-width: 769px) {
+		grid-template-columns: repeat(4, 1fr);
 	}
 }
 

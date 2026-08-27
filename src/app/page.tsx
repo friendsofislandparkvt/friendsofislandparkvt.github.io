@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Hero } from '@/components/Hero';
+import { News } from '@/components/News';
 import { contributorsList } from '@/lib/constants';
 import { Footer } from '@/components/Footer';
 
@@ -36,6 +37,8 @@ export default function Home(): React.JSX.Element {
                         />
                     </div>
                 </section>
+
+                <News />
 
                 <section id='teaser'>
                     <h2 className='text-center font-medium! tracking-[.02em] text-vt-green italic'>

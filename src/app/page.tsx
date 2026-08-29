@@ -26,16 +26,19 @@ export default function Home(): React.JSX.Element {
                         a connector for all, including walkers, hikers, bike riders, skateboarders,
                         anglers, boaters, schoolchildren, and tourists.
                     </p>
-                    <div className='flex w-full items-center justify-center p-4 pt-8'>
+                    <figure className='flex w-full flex-col items-center justify-center p-4 pt-8'>
                         <Image
-                            alt='Proposed Greenway Plans'
+                            alt='Proposed greenway plans featuring the General John Stark Memorial Bridge'
                             className='h-auto w-full max-w-340.75'
                             height='879'
                             loading='lazy'
                             src='/images/proposed_greenway_plans.png'
                             width='1363'
                         />
-                    </div>
+                        <figcaption className='text-center text-lg'>
+                            General John Stark Memorial Bridge
+                        </figcaption>
+                    </figure>
                 </section>
 
                 <News />

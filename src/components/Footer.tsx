@@ -13,10 +13,10 @@ export function Footer(): React.JSX.Element {
             <div className={footerLinkClasses}>
                 <p>Donate</p>
                 <Link
-                    href='https://www.gofundme.com/f/help-reclaim-brattleborohinsdale-island'
+                    href='https://www.zeffy.com/en-US/donation-form/access-and-stewardship-fund-for-the-twin-bridges-and-brattleboro-hinsdale-island'
                     target='_blank'
                 >
-                    GoFundMe
+                    Zeffy
                 </Link>
             </div>
             <div className='mb-2'>

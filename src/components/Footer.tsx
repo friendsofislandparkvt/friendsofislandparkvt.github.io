@@ -11,12 +11,11 @@ export function Footer(): React.JSX.Element {
                 <a href='mailto:friendsofislandparkvt@gmail.com'>friendsofislandparkvt@gmail.com</a>
             </div>
             <div className={footerLinkClasses}>
-                <p>Donate</p>
                 <Link
                     href='https://www.zeffy.com/en-US/donation-form/access-and-stewardship-fund-for-the-twin-bridges-and-brattleboro-hinsdale-island'
                     target='_blank'
                 >
-                    Zeffy
+                    Donate
                 </Link>
             </div>
             <div className='mb-2'>

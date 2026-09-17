@@ -35,9 +35,6 @@ export default function Home(): React.JSX.Element {
                             src='/images/proposed_greenway_plans.png'
                             width='1363'
                         />
-                        <figcaption className='text-center text-lg'>
-                            General John Stark Memorial Bridge
-                        </figcaption>
                     </figure>
                 </section>
 

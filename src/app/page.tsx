@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import { Hero } from '@/components/Hero';
 import { News } from '@/components/News';
-import { contributorsList } from '@/lib/constants';
+import { ContributorsList } from '@/components/ContributorsList';
+import { contributorsList, corporateSponsorsList } from '@/lib/constants';
 import { Footer } from '@/components/Footer';
 
 export default function Home(): React.JSX.Element {
@@ -46,22 +47,19 @@ export default function Home(): React.JSX.Element {
                     </h2>
                 </section>
 
-                <section
-                    className='p-8 pb-0'
-                    id='contributors-list'
-                >
-                    <h3 className='text-center text-xl text-muted'>Contributors to date include</h3>
-                    <ul className='mx-auto grid w-max gap-3 min-[401px]:grid-cols-2 min-[601px]:grid-cols-3 min-[769px]:grid-cols-4'>
-                        {contributorsList.map(contributor => (
-                            <li
-                                className='mr-2 min-[401px]:mr-3'
-                                key={contributor}
-                            >
-                                {contributor}
-                            </li>
-                        ))}
-                    </ul>
-                </section>
+                <ContributorsList
+                    contributors={contributorsList}
+                    sectionId='contributors-list'
+                    title='Contributors to date include'
+                    type='text'
+                />
+
+                <ContributorsList
+                    contributors={corporateSponsorsList}
+                    sectionId='corporate-sponsors'
+                    title='Corporate Sponsors'
+                    type='image'
+                />
             </main>
 
             <Footer />

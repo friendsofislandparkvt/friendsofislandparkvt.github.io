@@ -21,3 +21,13 @@ export const contributorsList = [
     'Hillary Twining',
     'Lissa Weinmann',
 ];
+
+export type Sponsor = {
+    name: string;
+    logo: string;
+};
+
+export const corporateSponsorsList: Sponsor[] = [
+    { name: 'Brattleboro Co-op', logo: 'brattleboro_co-op.png' },
+    { name: 'Studio Farm', logo: 'studio_farm.png' },
+];
